@@ -1,0 +1,14 @@
+### My First Project 
+
+gcloud config set project My First Project 
+
+# gcloud config set compute/zone COMPUTE_ZONE
+
+# gcloud config set compute/region COMPUTE_REGION
+
+gcloud container clusters create hello-cluster --num-nodes=1
+
+gcloud container clusters get-credentials hello-cluster
+
+kubectl create deployment hello-server \
+    --image=us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
